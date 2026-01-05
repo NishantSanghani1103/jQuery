@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideToggle">Slide Toggle</button>
+   
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("#demo").html("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto praesentium iste consequuntur, perspiciatis fugiat facere mollitia rerum porro. Perferendis dignissimos fugiat non sed sequi id dolores quidem voluptatibus consectetur?")
+    $("#hide").click(() => {
+        $("p").hide(2000)
+    })
+    $("#show").on("click", () => {
+        $("p").show(2000)
+    })
+    $("#toggle").on("click", function () {
+        $("p").toggle(2000)
+    })
+    $("#slideUp").click(() => {
+        $("p").slideUp()  // for the hide content
+    })
+    $("#slideDown").click(() => {
+        $("p").slideDown() // for the show content
+    })
+    $("#slideToggle").click(() => {
+        $("p").slideToggle()
+    })
+</script>
+
+</html>

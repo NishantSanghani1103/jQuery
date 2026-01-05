@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="password">
+<button class="btn">show password</button>
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(".btn").click(function () {
+            console.log();
+            let btnVal = $(this).html()
+            
+            if(btnVal=="show password"){
+                $("input").attr({type:"text"})
+                $(this).html("hide password")
+            }
+            else{
+                $("input").attr({type:"password"})
+                $(this).html("show password")
+            }
+        })
+    </script>
+</body>
+
+</html>

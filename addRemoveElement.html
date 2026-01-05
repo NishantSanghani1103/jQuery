@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="before">Before</button>
+    <button id="after">After</button>
+    <div id="res">
+        <p>Welcome To WsCubeTech</p>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("#append").click(() => {
+        $("#res").append("<p>Hello World</p>")
+    })
+
+    $("#prepend").click(() => {
+        $("#res").prepend("<p>Hello World</p>")
+    })
+    $("#before").click(() => {
+        $("#res").before("<p>Hello World</p>")
+    })
+    $("#after").click(() => {
+        $("#res").after("<p>Hello World</p>")
+    })
+</script>
+
+</html>

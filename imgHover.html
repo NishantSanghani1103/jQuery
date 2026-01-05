@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<img src="https://i.pinimg.com/736x/d6/4d/1d/d64d1d4645daadb9d0c7ac88818170be.jpg" alt="">
+<img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL3JtNTk3ZGVzaWduLWMtc2F2ZS0wMDIuanBn.jpg"
+    alt="">
+<img src="https://static.vecteezy.com/system/resources/thumbnails/037/348/946/small/ai-generated-pink-and-purple-leaves-with-dew-on-them-under-the-beautiful-lights-high-quality-ai-generative-photo.jpg"
+    alt="">
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let oldSrc
+        $("img").mouseover(function () {
+            oldSrc = $(this).attr('src')
+            console.log(oldSrc);
+            $(this).attr({ src: "https://m.media-amazon.com/images/I/71a37QykgSL._AC_UF1000,1000_QL80_.jpg" })
+        })
+
+        $("img").mouseout(function () {
+            $(this).attr({ src: oldSrc })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <h1>50</h1>
+    <h5></h5>
+    <button id="add">Add</button>
+    <button id="textContent">Print The Content</button>
+</div>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let oldValue = JSON.parse(localStorage.getItem("number")) ?? []
+        console.log(oldValue);
+        $("#add").click(() => {
+
+            let content = Number($("h1").html())
+
+            let sum = content + content
+            $("h1").html(sum)
+            oldValue.push(sum)
+            localStorage.setItem("number", JSON.stringify(oldValue))
+            console.log(oldValue);
+        })
+
+        $("#textContent").click(() => {
+            let val=$("h1").text()
+            $("h5").html(val)
+            console.log(val);
+            
+        })
+
+    </script>
+</body>
+
+</html>

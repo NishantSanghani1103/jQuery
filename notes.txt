@@ -1,0 +1,44 @@
+=> for the hide content we can use 4 main methods in jQuery.
+1.hide/show
+2.slideUp/slideDown
+3.display-none/block
+4.fadeOut/fadeIn
+
+=>events are following:
+1.mouseHover
+2.mouseOut
+3.click
+4.on
+
+=> for add content or eleement
+1.prepend
+2.append
+3.before
+4.after
+
+=>widht/height function:
+1.width():-specify the width without padding
+2.height():-same as width
+3.innerWidth():-specify the witdth with padding
+4.innerHeight():-same as innerWidth
+
+=> traversing in JQuery:
+    1.parent Property:-
+    I.parent() - used when need to reach fist parent of the div
+    II.parents() - used when needs all the parents
+    III.parentsUntill() - used whent we want to reach till specific parent
+
+    2.children property:-
+    used to reach the child tag or element of the parent div.
+
+    3.find property:-
+    i used when we want to reach out at the specific element of the children
+
+=>siblings in JQuery:
+    1.siblings():-all the elements next and previos
+    2.next():-next element for the tag
+    3.nextAll():-all the next element of the tag
+    4.prev():-previos element og the tag.
+    5.prevAll():-previos all the elements of the tag
+    6.prevUntill():-used when we need to reach some specified previos element
+

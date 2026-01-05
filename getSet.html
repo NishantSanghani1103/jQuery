@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"><h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore commodi quaerat, perferendis ipsam modi illo asperiores nobis <u>neque</u> in beatae ea at pariatur. Vel ipsum earum asperiores aut eius.</h1></div>
+    <div class="res"></div>
+    <button id="save">Copy Data</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("#save").click(()=>{
+        let content=$("#content").html()
+        console.log(content);
+        $(".res").html(content)      
+    })
+</script>
+</html>

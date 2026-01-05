@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <button id="add">Click Me</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle Class</button>
+    <button id="css">CSS</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, sapiente perferendis? Ad aut id assumenda ipsa
+        animi. Et repellat vitae consectetur nisi eaque tempora neque est, dolor odio suscipit dolorum.</p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("#add").click(() => {
+        $("p").addClass("activePara")
+    })
+    $("#remove").click(() => {
+        $("p").removeClass("activePara")
+    })
+    $("#toggle").click(() => {
+        $("p").toggleClass("activePara")
+    })
+    $("#css").click(() => {
+        $("p").css({ color: "blue", fontSize: "30px" ,"background-color":"yellow" })
+    })
+</script>
+
+</html>

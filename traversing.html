@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="mainInner">
+            <div class="mainInnerChild">
+                <button id="btnParent">Click Me!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="child">
+        <p>welcome <b>to</b> <u> ws</u></p>
+        <div>
+            <h2>Hello World</h2>
+        </div>
+    </div>
+    <button id="btnChild">Child Element</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("#btnParent").click(() => {
+        $("button").parentsUntil("body").addClass("activePara")
+    })
+
+
+    $("#btnChild").click(() => {
+        let cElement = $("p").children()
+        console.log(cElement);
+        let findElement = $("#child").children()
+        console.log(findElement[1]);
+        let h2Tag = $(findElement[1]).find("h2")
+        console.log(h2Tag);
+        $(h2Tag).css({ color: "pink",fontSize:"50px" })
+        console.log(cElement[0], cElement[1]);
+        $(cElement[0]).css({ color: "red", fontSize: "20px" })
+    })
+
+</script>
+
+</html>

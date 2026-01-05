@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div class="main">
+        <input type="text" name="" id="">
+        <button>Add Task</button>
+    </div>
+    <div class="content">
+        <ul>
+
+        </ul>
+    </div>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("button").click(() => {
+            let value = $("input").val()
+            $("ul").append(` <li
+                style="background-color: rgb(148, 148, 250); color: white; width: fit-content;  padding: 5px; margin: 5px 0px;">
+        ${value}&nbsp;&nbsp;<span onClick="removeTask(this)">&times;</span></li>`)
+            $("input").val("")
+        })
+
+        // $("ul").on("click", "span", function () {
+        //     $(this).parent().remove()
+        // })
+
+
+        // alternative option for remove
+
+        const removeTask = (val) => {
+            // console.log($(val));
+            
+            // let spanValue = ($(val));
+            // console.log(spanValue);
+            $(val).parent().remove();
+        }
+    </script>
+</body>
+
+</html>
