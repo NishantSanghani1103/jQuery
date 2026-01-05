@@ -42,3 +42,10 @@
     5.prevAll():-previos all the elements of the tag
     6.prevUntill():-used when we need to reach some specified previos element
 
+
+=>filter in JQuery:-
+    1.fist()
+    2.last()
+    3.eq():-we need to pass index number of the tag
+    4.filter():-target the specific element
+
